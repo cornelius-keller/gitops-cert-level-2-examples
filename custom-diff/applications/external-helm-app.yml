@@ -34,4 +34,4 @@ spec:
       kind: secret
       name: example-secret
       jsonPointers:
-        - data/my-password
+        - /data/my-password
