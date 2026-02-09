@@ -22,13 +22,11 @@ spec:
     syncOptions:
       - CreateNamespace=true
 
-spec:
   ignoreDifferences:
     - group: apps
       kind: Deployment
       jsonPointers:
-        - /metadata/annotations/creation
-    - group:
-      kind: secret
+      - /metadata/annotations/creation   
+    - kind: Secret
       jsonPointers:
-        - /data/my-password
+        - /data/my-password         
